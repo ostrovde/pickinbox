@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-label="Envelope passing a shield gate, with an authenticated tick">
+  <defs>
+    <linearGradient id="sGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f7b46"/><stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="sBlob" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10b981" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity=".03"/>
+    </linearGradient>
+    <filter id="sSoft" x="-40%" y="-40%" width="180%" height="200%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0b1220" flood-opacity=".15"/>
+    </filter>
+    <pattern id="sDots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#10b981" opacity=".2"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="320" fill="none"/>
+  <circle cx="880" cy="70" r="240" fill="url(#sBlob)"/>
+  <rect x="60" y="180" width="200" height="110" fill="url(#sDots)" opacity=".7"/>
+
+  <g filter="url(#sSoft)">
+    <rect x="140" y="106" width="240" height="150" rx="18" fill="#fff" stroke="#e3e8ef"/>
+    <path d="M140 124l120 78 120-78" fill="none" stroke="#c9d5e6" stroke-width="5"
+          stroke-linecap="round"/>
+    <rect x="164" y="212" width="96" height="12" rx="6" fill="#e2e9f3"/>
+  </g>
+
+  <g filter="url(#sSoft)">
+    <rect x="640" y="106" width="240" height="150" rx="18" fill="#fff" stroke="#e3e8ef"/>
+    <path d="M640 124l120 78 120-78" fill="none" stroke="url(#sGreen)" stroke-width="5"
+          stroke-linecap="round"/>
+    <rect x="664" y="212" width="120" height="12" rx="6" fill="#d7efe4"/>
+  </g>
+
+  <g filter="url(#sSoft)">
+    <path d="M520 62l84 38v64c0 48-34 82-84 96-50-14-84-48-84-96v-64z" fill="url(#sGreen)"/>
+    <path d="M484 160l26 26 48-56" fill="none" stroke="#fff" stroke-width="10"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g filter="url(#sSoft)">
+    <rect x="960" y="122" width="180" height="52" rx="14" fill="#fff" stroke="#e3e8ef"/>
+    <text x="986" y="155" font-family="system-ui,Segoe UI,Roboto,sans-serif" font-size="19"
+          font-weight="700" fill="#0f7b46">SPF · DKIM</text>
+    <rect x="960" y="188" width="180" height="52" rx="14" fill="#fff" stroke="#e3e8ef"/>
+    <text x="986" y="221" font-family="system-ui,Segoe UI,Roboto,sans-serif" font-size="19"
+          font-weight="700" fill="#0b1220">DMARC</text>
+  </g>
+</svg>

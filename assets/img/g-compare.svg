@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-label="Comparison chart with a magnifier over the leading option">
+  <defs>
+    <linearGradient id="c1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="c2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#06b6d4"/><stop offset="1" stop-color="#67e8f9"/>
+    </linearGradient>
+    <linearGradient id="cBlob" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity=".03"/>
+    </linearGradient>
+    <filter id="cSoft" x="-40%" y="-40%" width="180%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0b1220" flood-opacity=".14"/>
+    </filter>
+    <pattern id="cDots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#2563eb" opacity=".2"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="320" fill="none"/>
+  <circle cx="210" cy="80" r="220" fill="url(#cBlob)"/>
+  <rect x="930" y="150" width="220" height="130" fill="url(#cDots)" opacity=".7"/>
+
+  <g filter="url(#cSoft)">
+    <rect x="120" y="66" width="470" height="196" rx="22" fill="#fff" stroke="#e3e8ef"/>
+    <rect x="176" y="216" width="46" height="26" rx="8" fill="#dbe6f7"/>
+    <rect x="248" y="188" width="46" height="54" rx="8" fill="#c3d7f5"/>
+    <rect x="320" y="150" width="46" height="92" rx="8" fill="url(#c1)"/>
+    <rect x="392" y="122" width="46" height="120" rx="8" fill="url(#c2)"/>
+    <rect x="464" y="168" width="46" height="74" rx="8" fill="#c3d7f5"/>
+    <path d="M176 108h150" stroke="#e3e8ef" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#cSoft)" transform="translate(392 96)">
+    <circle cx="0" cy="0" r="58" fill="#fff" opacity=".55"/>
+    <circle cx="0" cy="0" r="46" fill="none" stroke="#2563eb" stroke-width="7"/>
+    <path d="M34 34l34 34" stroke="#2563eb" stroke-width="9" stroke-linecap="round"/>
+    <path d="M-24 4l14 14 30-32" fill="none" stroke="#f59e0b" stroke-width="8"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g filter="url(#cSoft)">
+    <rect x="680" y="112" width="400" height="58" rx="16" fill="#fff" stroke="#e3e8ef"/>
+    <circle cx="712" cy="141" r="12" fill="#0f7b46"/>
+    <path d="M706 141l5 5 10-11" fill="none" stroke="#fff" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="736" y="128" width="140" height="10" rx="5" fill="#c9d5e6"/>
+    <rect x="736" y="146" width="86" height="10" rx="5" fill="#e2e9f3"/>
+    <rect x="680" y="186" width="400" height="58" rx="16" fill="#fff" stroke="#e3e8ef"/>
+    <circle cx="712" cy="215" r="12" fill="#c9d5e6"/>
+    <rect x="736" y="202" width="118" height="10" rx="5" fill="#c9d5e6"/>
+    <rect x="736" y="220" width="70" height="10" rx="5" fill="#e2e9f3"/>
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" role="img"
+     aria-label="Illustration: message cards flying into an inbox tray, with open-rate and click-rate chips">
+  <defs>
+    <linearGradient id="hBlob" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity=".05"/>
+    </linearGradient>
+    <linearGradient id="hTray" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#132039"/><stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="hCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f4f7fc"/>
+    </linearGradient>
+    <linearGradient id="hBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="hSoft" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#0b1220" flood-opacity=".16"/>
+    </filter>
+    <filter id="hSoft2" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0b1220" flood-opacity=".13"/>
+    </filter>
+    <pattern id="hDots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#2563eb" opacity=".22"/>
+    </pattern>
+  </defs>
+
+  <rect width="1120" height="620" fill="none"/>
+  <circle cx="880" cy="300" r="300" fill="url(#hBlob)"/>
+  <rect x="36" y="40" width="230" height="150" fill="url(#hDots)" opacity=".8"/>
+
+  <!-- inbox tray -->
+  <g filter="url(#hSoft)">
+    <rect x="596" y="352" width="452" height="216" rx="30" fill="url(#hTray)"/>
+    <rect x="620" y="376" width="404" height="168" rx="20" fill="#ffffff" opacity=".06"/>
+    <path d="M620 440h120l26 34h112l26-34h120" fill="none" stroke="#06b6d4" stroke-width="3.4"
+          stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>
+  </g>
+
+  <!-- flying messages -->
+  <g filter="url(#hSoft2)">
+    <g transform="rotate(-9 742 236)">
+      <rect x="652" y="176" width="182" height="120" rx="16" fill="url(#hCard)" stroke="#dbe3ef"/>
+      <path d="M652 190l91 62 91-62" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+      <rect x="674" y="252" width="72" height="8" rx="4" fill="#c9d5e6"/>
+      <rect x="674" y="270" width="44" height="8" rx="4" fill="#e2e9f3"/>
+    </g>
+    <g transform="rotate(6 902 150)">
+      <rect x="812" y="92" width="182" height="120" rx="16" fill="url(#hCard)" stroke="#dbe3ef"/>
+      <path d="M812 106l91 62 91-62" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"/>
+      <rect x="834" y="168" width="86" height="8" rx="4" fill="#c9d5e6"/>
+      <rect x="834" y="186" width="52" height="8" rx="4" fill="#e2e9f3"/>
+    </g>
+  </g>
+
+  <!-- metric chips -->
+  <g filter="url(#hSoft2)">
+    <g>
+      <rect x="92" y="120" width="272" height="92" rx="18" fill="#fff" stroke="#e3e8ef"/>
+      <text x="118" y="154" font-family="system-ui,Segoe UI,Roboto,sans-serif" font-size="17"
+            fill="#5b6675" letter-spacing="1.2">OPEN RATE</text>
+      <text x="118" y="192" font-family="system-ui,Segoe UI,Roboto,sans-serif" font-size="34"
+            font-weight="700" fill="#0b1220">42.8%</text>
+      <rect x="252" y="168" width="88" height="10" rx="5" fill="#eef2f9"/>
+      <rect x="252" y="168" width="62" height="10" rx="5" fill="url(#hBar)"/>
+    </g>
+    <g>
+      <rect x="150" y="268" width="272" height="92" rx="18" fill="#fff" stroke="#e3e8ef"/>
+      <text x="176" y="302" font-family="system-ui,Segoe UI,Roboto,sans-serif" font-size="17"
+            fill="#5b6675" letter-spacing="1.2">CLICK RATE</text>
+      <text x="176" y="340" font-family="system-ui,Segoe UI,Roboto,sans-serif" font-size="34"
+            font-weight="700" fill="#0b1220">6.1%</text>
+      <rect x="310" y="316" width="88" height="10" rx="5" fill="#eef2f9"/>
+      <rect x="310" y="316" width="34" height="10" rx="5" fill="#f59e0b"/>
+    </g>
+    <g>
+      <rect x="212" y="416" width="250" height="80" rx="18" fill="#fff" stroke="#e3e8ef"/>
+      <text x="238" y="450" font-family="system-ui,Segoe UI,Roboto,sans-serif" font-size="17"
+            fill="#5b6675" letter-spacing="1.2">LIST GROWTH</text>
+      <text x="238" y="482" font-family="system-ui,Segoe UI,Roboto,sans-serif" font-size="30"
+            font-weight="700" fill="#0f7b46">+1 240</text>
+    </g>
+  </g>
+
+  <!-- send arrow -->
+  <g transform="translate(516 196)">
+    <circle cx="0" cy="0" r="42" fill="#2563eb"/>
+    <path d="M-15 -6L18 0 -15 6 -9 0z" fill="#fff"/>
+    <path d="M-15 -6L18 0 -15 6" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+</svg>

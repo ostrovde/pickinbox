@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-label="Review card with a five-star rating">
+  <defs>
+    <linearGradient id="rAmber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="rBlob" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity=".03"/>
+    </linearGradient>
+    <filter id="rSoft" x="-40%" y="-40%" width="180%" height="200%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0b1220" flood-opacity=".15"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" fill="none"/>
+  <circle cx="880" cy="70" r="240" fill="url(#rBlob)"/>
+
+  <g filter="url(#rSoft)">
+    <rect x="150" y="58" width="560" height="204" rx="24" fill="#fff" stroke="#e3e8ef"/>
+    <rect x="186" y="94" width="64" height="64" rx="18" fill="#0b1220"/>
+    <text x="218" y="137" font-family="system-ui,Segoe UI,Roboto,sans-serif" font-size="34"
+          font-weight="700" fill="#fff" text-anchor="middle">K</text>
+    <rect x="266" y="104" width="150" height="14" rx="7" fill="#0b1220" opacity=".85"/>
+    <rect x="266" y="128" width="96" height="12" rx="6" fill="#c9d5e6"/>
+    <g fill="url(#rAmber)">
+      <path d="M188 186l11 23 25 3-18 18 5 25-23-13-23 13 5-25-18-18 25-3z"/>
+      <path d="M256 186l11 23 25 3-18 18 5 25-23-13-23 13 5-25-18-18 25-3z"/>
+      <path d="M324 186l11 23 25 3-18 18 5 25-23-13-23 13 5-25-18-18 25-3z"/>
+      <path d="M392 186l11 23 25 3-18 18 5 25-23-13-23 13 5-25-18-18 25-3z"/>
+    </g>
+    <g fill="#e2e9f3">
+      <path d="M460 186l11 23 25 3-18 18 5 25-23-13-23 13 5-25-18-18 25-3z"/>
+    </g>
+    <rect x="536" y="196" width="130" height="12" rx="6" fill="#e2e9f3"/>
+  </g>
+
+  <g filter="url(#rSoft)">
+    <rect x="760" y="88" width="300" height="60" rx="16" fill="#fff" stroke="#e3e8ef"/>
+    <rect x="786" y="106" width="120" height="10" rx="5" fill="#c9d5e6"/>
+    <rect x="786" y="124" width="176" height="10" rx="5" fill="#e2e9f3"/>
+    <rect x="760" y="164" width="300" height="60" rx="16" fill="#fff" stroke="#e3e8ef"/>
+    <rect x="786" y="182" width="150" height="10" rx="5" fill="#c9d5e6"/>
+    <rect x="786" y="200" width="110" height="10" rx="5" fill="#e2e9f3"/>
+  </g>
+</svg>

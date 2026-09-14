@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-label="Decision path splitting into two branches, one ending in a tick">
+  <defs>
+    <linearGradient id="kBlob" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity=".04"/>
+    </linearGradient>
+    <filter id="kSoft" x="-40%" y="-40%" width="180%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0b1220" flood-opacity=".14"/>
+    </filter>
+    <pattern id="kDots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#06b6d4" opacity=".22"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="320" fill="none"/>
+  <circle cx="240" cy="70" r="220" fill="url(#kBlob)"/>
+  <rect x="60" y="180" width="200" height="110" fill="url(#kDots)" opacity=".7"/>
+
+  <path d="M300 160h190c34 0 44-62 84-62h150" fill="none" stroke="#06b6d4" stroke-width="8"
+        stroke-linecap="round" stroke-dasharray="1 22"/>
+  <path d="M300 160h190c34 0 44 62 84 62h150" fill="none" stroke="#2563eb" stroke-width="8"
+        stroke-linecap="round"/>
+  <path d="M724 98l34 30-34 30" fill="none" stroke="#2563eb" stroke-width="8"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g filter="url(#kSoft)">
+    <rect x="180" y="112" width="140" height="96" rx="18" fill="#fff" stroke="#e3e8ef"/>
+    <rect x="204" y="140" width="92" height="10" rx="5" fill="#c9d5e6"/>
+    <rect x="204" y="160" width="60" height="10" rx="5" fill="#e2e9f3"/>
+    <rect x="204" y="180" width="76" height="10" rx="5" fill="#e2e9f3"/>
+  </g>
+
+  <g filter="url(#kSoft)">
+    <rect x="760" y="58" width="330" height="80" rx="18" fill="#fff" stroke="#e3e8ef"/>
+    <circle cx="804" cy="98" r="18" fill="#0f7b46"/>
+    <path d="M795 98l7 7 14-16" fill="none" stroke="#fff" stroke-width="4"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="836" y="82" width="150" height="12" rx="6" fill="#c9d5e6"/>
+    <rect x="836" y="104" width="94" height="12" rx="6" fill="#e2e9f3"/>
+  </g>
+
+  <g filter="url(#kSoft)">
+    <rect x="760" y="182" width="330" height="80" rx="18" fill="#f8fafd" stroke="#e3e8ef"/>
+    <circle cx="804" cy="222" r="18" fill="#e6ecf5"/>
+    <path d="M796 214l16 16M812 214l-16 16" fill="none" stroke="#93a2b8" stroke-width="4"
+          stroke-linecap="round"/>
+    <rect x="836" y="206" width="126" height="12" rx="6" fill="#d6dee9"/>
+    <rect x="836" y="228" width="78" height="12" rx="6" fill="#e6ecf5"/>
+  </g>
+</svg>
