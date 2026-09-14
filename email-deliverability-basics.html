@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Email deliverability: the basics that decide everything — PickInbox</title>
+<meta name="description" content="SPF, DKIM, DMARC, shared versus dedicated IPs and list hygiene explained plainly — the deliverability basics that matter more than any template.">
+<link rel="canonical" href="https://ostrovde.github.io/pickinbox/email-deliverability-basics.html">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">Pick<span>Inbox</span></a>
+    <nav>
+      <a href="best-email-marketing-platforms.html">Best platforms</a>
+      <a href="how-to-choose-email-platform.html">How to choose</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap article">
+  <p class="kicker">Guide</p>
+  <h1>Email deliverability: the basics that decide everything</h1>
+  <p class="lede">You can write a perfect email and still lose — if it never reaches the inbox. The
+  factors that decide placement are mostly technical, and they are set before you hit send.</p>
+
+  <div class="note"><b>Affiliate disclosure:</b> some outbound links on this site are affiliate links.
+  Signing up through one may earn this site a commission at no extra cost to you.</div>
+
+  <h2>The three DNS records that matter</h2>
+
+  <h3>SPF — who is allowed to send as you</h3>
+  <p>A DNS record listing the servers authorised to send mail for your domain. If your email platform
+  is not listed, receivers can treat your mail as forged. Most platforms document the exact record to
+  add; the failure mode is having <i>two</i> SPF records, which invalidates both.</p>
+
+  <h3>DKIM — proof the message was not altered</h3>
+  <p>A cryptographic signature applied to each message and verified against a public key in your DNS.
+  It survives forwarding better than SPF and is the record most often missing. Your platform should
+  give you the key and the selector name.</p>
+
+  <h3>DMARC — what to do when the first two fail</h3>
+  <p>A policy record that tells receivers how to handle mail that fails SPF or DKIM, plus where to send
+  reports. Start with a monitoring policy that only reports, watch the reports for a few weeks, then
+  tighten. Jumping straight to a strict policy before you know all legitimate senders will break
+  real mail.</p>
+
+  <h2>Shared IP or dedicated IP</h2>
+  <p>On a <b>shared</b> pool your reputation depends partly on other senders. That is usually fine —
+  and it is the right default for most lists, especially under a few tens of thousands of messages a
+  month, because you inherit a warm reputation instead of building one from nothing.</p>
+  <p>A <b>dedicated</b> IP only makes sense if you send high volume consistently. A dedicated IP with
+  low, irregular volume looks worse than a shared one: you never accumulate the engagement signals
+  receivers want.</p>
+
+  <h2>List hygiene beats clever subject lines</h2>
+  <ul>
+    <li><b>Use confirmed opt-in</b> (double opt-in) where you can. It reduces list size and improves
+    every downstream metric.</li>
+    <li><b>Suppress hard bounces permanently.</b> Continuing to send to dead addresses is one of the
+    fastest ways to damage reputation.</li>
+    <li><b>Re-engage before you drop.</b> Run a win-back campaign on contacts who have not opened in
+    six months; remove whoever does not respond.</li>
+    <li><b>Never send to a purchased or scraped list.</b> No amount of technical setup survives that.</li>
+  </ul>
+
+  <h2>Content signals receivers actually read</h2>
+  <ul>
+    <li>A clear text version alongside HTML.</li>
+    <li>Real, working unsubscribe links that take effect immediately.</li>
+    <li>Consistent sending volume — sudden spikes look like a compromise.</li>
+    <li>Low complaint rates; make unsubscribing easier than marking spam.</li>
+  </ul>
+
+  <h2>What to check before you choose a platform</h2>
+  <p>Custom sending domain, SPF/DKIM/DMARC support and suppression controls are non-negotiable. If a
+  platform makes these hard, no editor feature compensates. This is check three in
+  <a href="how-to-choose-email-platform.html">the ten-minute guide</a>, and it is the check most
+  people skip.</p>
+
+  <p class="small">Last reviewed: September 2026. Nothing here is a substitute for your provider’s
+  current documentation.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 PickInbox — independent reviews. Some outbound links are affiliate links.
+    <a href="about.html">About</a></p>
+  </div>
+</footer>
+</body>
+</html>
