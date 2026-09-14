@@ -56,5 +56,11 @@ li{margin:7px 0}
      padding:11px 18px;border-radius:7px;font-weight:600;font-size:15px}
 .btn:hover{background:var(--accent-ink)}
 hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+ul.vendors{list-style:none;padding-left:0;margin:18px 0}
+ul.vendors li{padding:11px 0;border-top:1px solid var(--line);margin:0;font-size:15px}
+ul.vendors li:first-child{border-top:0}
+ul.vendors a{font-weight:600}
+code{background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:1px 5px;
+     font-size:13.5px}
 footer{border-top:1px solid var(--line);margin-top:52px;padding:22px 0 40px;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--muted)}
